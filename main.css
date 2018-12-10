@@ -1,8 +1,8 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    widows: 100%;
+    width: 100%;
     height: 100%;
     background: #000000;
     font-family: 'Montserrat', sans-serif;
@@ -48,17 +48,25 @@ li.navigation-li {
 
 .search {
     display: flex;
-    justify-content: flex-end;
-    width: 75%;
+    grid-column: 11/11;
+    grid-row: 1/11;
+    background: black;
+    border-left: 5px solid #b9434300;
+    border-image: linear-gradient(to bottom, #01073c 0%, #0021ff 50%, #01073c 100%);
+    border-image-slice: 1;
 }
 
 .fa-search {
-    padding-right: 5px;
+    padding: 10px;
 }
 
 .search-link {
+    box-sizing: border-box;
     padding: 10px;
-    transform: translateX(-30%);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -67,8 +75,8 @@ li.navigation-li {
     background-size: cover;
     background-attachment: fixed;
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     height: 100vh;
     width: 100%;
 }
@@ -104,6 +112,7 @@ li.navigation-li {
     width: 100%;
     height: 50vh;
     padding: 15px;
+    box-sizing: border-box;
 }
 
 .watch-container {
