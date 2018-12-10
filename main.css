@@ -20,7 +20,7 @@ a.knight-logo-link {
 }
 a.knight-logo-link h3 {
     font-size: 28px;
-    color: #1d3ada;
+    color: #0040b4;
     text-transform: uppercase;
     margin: 0;
     padding: 10px;
@@ -39,7 +39,7 @@ a.knight-logo-link h3 {
     transition: all 300ms ease-in-out;
 }
 .email-contact:hover {
-    color: #1d3ada;
+    color: #0040b4;
 }
 .fa-envelope {
     padding-right: 10px;
@@ -82,7 +82,7 @@ li.navigation-li {
     grid-row: 1/11;
     background: #0D0D0D;
     border-left: 5px solid #b9434300;
-    border-image: linear-gradient(to bottom, #01073c 0%, #0021ff 50%, #01073c 100%);
+    border-image: linear-gradient(to bottom, #01073c 0%, #0040b4 50%, #01073c 100%);
     border-image-slice: 1;
     justify-content: space-between;
     flex-direction: column;
@@ -135,7 +135,7 @@ height: 50%;
   .hamburger-menu span:before {
     width: 28px;
     height: 3px;
-    background-color: #42a5f5;
+    background-color: #0040b4;
     transition: all 0.3s;
     backface-visibility: hidden;
     border-radius: 2px;
@@ -161,13 +161,15 @@ height: 50%;
   }
   .fa-phone {
     transform: rotate(-180deg);
+    transition: all ease-in-out 300ms;
+  }
+  .fa-phone:hover,
+    .fa-phone:active {
+      color: white;
   }
 
 
 #card-1 {
-    /* background: url("homepage-bg.jpg");
-    background-size: cover;
-    background-attachment: fixed; */
     background-color: #0c0c0cf0;;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
@@ -198,13 +200,6 @@ h1.knight-watches-title {
     position: absolute;
 }
 
-.image-overlay {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-}
-
 .card-1-text-container {
     grid-row: 4/7;
     grid-column: 1/11;
@@ -212,6 +207,46 @@ h1.knight-watches-title {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.shop-now-button {
+    grid-row: 7/7;
+    grid-column: 6/8;
+
+}
+.shop-now {
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #0040b4;
+    color: #101010;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;  
+}
+.shop-now:hover {
+    color: #fff;
+}
+.shop-now::After {
+    content: "\2192";
+    font-size: 24px;
+    transition: all ease-in-out 300ms;
+}
+.shop-now:hover::after {
+    color: #fff;
+}
+.portfolio-link {
+    grid-column: 1/1;
+    font-size: 30px;
+    grid-row: 10/10;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    font-weight: bold;
+    width: 50px;
+    box-sizing: border-box;
+    transition: 300ms ease-in-out all;
+}
+.portfolio-link:hover {
+    color: #0040b4;
 }
 
 .main-header {
