@@ -14,6 +14,7 @@ html, body {
     display: flex;
     position: fixed;
     justify-content: space-between;
+    align-items: center;
 }
 a.knight-logo-link {
     text-decoration: none;
@@ -69,6 +70,46 @@ li.navigation-li {
     letter-spacing: 2px;
     transition: all 300ms ease-in-out 0s;
 }
+.main-navigation-anchors {
+    padding: 5px 15px;
+    margin:10px 4px;
+    position: relative;
+}
+
+
+.main-navigation-anchors::before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #6098FF;
+    display: block;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  }
+  
+  .main-navigation-anchors:hover::before {
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  
+
+
+
+
+
 
 .main-navigation-anchors:hover,
 .search-link:hover {
