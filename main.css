@@ -16,10 +16,14 @@ body {
     position: fixed;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
+    transform: translateY(115%);
 }
 
 a.knight-logo-link {
     text-decoration: none;
+    z-index: 100;
+    position: relative;
 }
 
 a.knight-logo-link h3 {
@@ -28,6 +32,7 @@ a.knight-logo-link h3 {
     text-transform: uppercase;
     margin: 0;
     padding: 10px;
+    margin-left: 25px;
 }
 
 .email-container {
@@ -316,7 +321,7 @@ h1.knight-watches-title {
 
 .card-1-text-container-paragraph {
     margin: 0;
-    font-size: 30px;
+    font-size: 24px;
     text-align: left;
     color: #fff;
     grid-row: 5/8;
