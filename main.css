@@ -11,13 +11,13 @@ body {
 }
 
 .navigation-bar {
-    width: 65%;
     display: flex;
-    position: fixed;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transform: translateY(115%);
+    grid-row: 1/3;
+    grid-column: 1/7;
 }
 
 a.knight-logo-link {
@@ -288,7 +288,6 @@ h1.knight-watches-title {
 .shop-now::After {
     content: "\2192";
     font-size: 24px;
-    transition: all ease-in-out 300ms;
 }
 
 .shop-now:hover::after {
