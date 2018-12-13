@@ -294,7 +294,7 @@ h1.knight-watches-title {
 .shop-now:hover::after {
     color: #fff;
 }
-.slider-buttons {
+#slider-buttons {
     grid-row: 10/10;
     grid-column: 5/7;
     display: flex;
