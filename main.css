@@ -64,8 +64,9 @@ a.knight-logo-link h3 {
     width: 0;
     height: 100%;
     right: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
     overflow: hidden;
+    transition: all 1s ease-in-out; 
 }
 .main-navigation {
     padding: 0;
@@ -77,11 +78,11 @@ a.knight-logo-link h3 {
 }
 .on {
     width: 100%;
+    transition: all 700ms ease-in-out;
 }
 li.navigation-li {
     list-style: none;
     padding: 0;
-    transition: all ease-in-out 300ms;
 }
 
 .main-navigation-anchors,
@@ -165,8 +166,10 @@ li.navigation-li {
 
 .hamburger-menu {
     padding: 10px;
-    height: 50%;
+    transform: translateY(-240px);
     margin: auto;
+    z-index: 100;
+    transition: all 1s ease-in-out;
 }
 
 .hamburger-menu:hover {
