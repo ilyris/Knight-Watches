@@ -99,6 +99,8 @@ li.navigation-li {
     padding: 5px 15px;
     margin: 10px 4px;
     position: relative;
+    font-size: 5em;
+    text-transform: uppercase;
 }
 
 
@@ -168,6 +170,7 @@ li.navigation-li {
     padding: 10px;
     transform: translateY(-240px);
     margin: auto;
+    height: 2%;
     z-index: 100;
     transition: all 1s ease-in-out;
 }
@@ -222,6 +225,7 @@ li.navigation-li {
     padding: 10px;
     box-sizing: border-box;
     transform: translateY(-100%);
+    z-index: -1;
 }
 
 .fa-phone {
@@ -299,13 +303,11 @@ h1.knight-watches-title {
     color: #fff;
 }
 
-.shop-now::After {
-    content: "\2192";
-    font-size: 24px;
-}
-
 .shop-now:hover::after {
     color: #fff;
+}
+.fa-arrow-right {
+    padding-left: 10px;
 }
 #slider-buttons {
     grid-row: 10/10;

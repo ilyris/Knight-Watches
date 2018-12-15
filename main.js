@@ -2,6 +2,7 @@
     const innerButtons = document.getElementsByClassName('inner-button');
     const sliderButtonContainer = document.getElementById('slider-buttons');
     const fullScreenNavigation = document.querySelector(".navigation-slide-container");
+    const menuLinksLi = document.getElementsByClassName('navigation-li');
 
     
     document.querySelector(".hamburger-menu").addEventListener("click", toggleMenu);
@@ -9,6 +10,10 @@
 function toggleMenu() {
   this.classList.toggle("toggle-active");
   fullScreenNavigation.classList.toggle("on");
+    for(value of menuLinksLi) {
+            console.log(value);
+            value.classList.add('fadeInRightBig');
+    }
 
 }
 
