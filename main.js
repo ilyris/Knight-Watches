@@ -23,16 +23,16 @@ function toggleMenu() {
   }
 }
 
-const toggleSliderButtons = () => {
-  for (let i = 0; i < innerButtons.length; i++) {
-    innerButtons[i].addEventListener("click", function() {
-      const activesliderButton = document.getElementsByClassName("active");
-      activesliderButton[0].className = activesliderButton[0].className.replace("active","");
-      this.className += " active";
-    });
-  }
-};
+// const toggleSliderButtons = () => {
+//   for (let i = 0; i < innerButtons.length; i++) {
+//     innerButtons[i].addEventListener("click", function() {
+//       const activesliderButton = document.getElementsByClassName("active");
+//       activesliderButton[0].className = activesliderButton[0].className.replace("active","");
+//       this.className += " active";
+//     });
+//   }
+// };
 
-for (let value of innerButtons) {
-  value.addEventListener("click", toggleSliderButtons);
-}
+// for (let value of innerButtons) {
+//   value.addEventListener("click", toggleSliderButtons);
+// }
