@@ -264,6 +264,7 @@ li.navigation-li {
     min-height: 400px;
     transform: translateY(-10%);
     background-repeat: no-repeat;
+    animation-delay: 1500ms;
 }
 
 h1.knight-watches-title {
@@ -272,6 +273,8 @@ h1.knight-watches-title {
     margin: 0;
     grid-row: 4/5;
     grid-column: 6/11;
+    animation-duration: 1s;
+
 }
 
 .knight-watches-title::After {
@@ -287,9 +290,12 @@ h1.knight-watches-title {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .shop-now-button {
+    animation-duration: 1500ms;
+    animation-delay: 1s;
     grid-row: 7/7;
     grid-column: 6/8;
 
@@ -388,6 +394,7 @@ h1.knight-watches-title {
     grid-row: 5/8;
     grid-column: 6/9;
     min-width: 500px;
+    animation-delay: 300ms;
 }
 
 /* #card-2 {
