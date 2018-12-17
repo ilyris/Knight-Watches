@@ -89,7 +89,7 @@ li.navigation-li {
 
 .main-navigation-anchors,
 .search-link {
-    color: white;
+    color: #0040b4;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -135,9 +135,12 @@ li.navigation-li {
     transform: scale(1, 1)
 }
 
-.main-navigation-anchors:hover,
-.search-link:hover {
+.main-navigation-anchors:hover {
     color: rgb(52, 231, 255);
+}
+
+.search-link:hover {
+    color: #fff;
 }
 
 .right-navigation-menu {
